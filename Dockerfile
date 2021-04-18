@@ -1,4 +1,6 @@
 MAINTAINER pallsingh
 
-RUN ./configure && \
+RUN docker pull hpc/ior && \
+    cd /root/ior && \
+    ./configure && \
     make    
